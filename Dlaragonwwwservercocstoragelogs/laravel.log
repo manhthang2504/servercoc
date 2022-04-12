@@ -1,0 +1,42 @@
+[2022-04-10 01:23:02] local.INFO: Start deploying project test1  
+[2022-04-10 01:23:03] local.ERROR: mkdir(): File exists {"exception":"[object] (ErrorException(code: 0): mkdir(): File exists at /mnt/d/laragon/www/servercoc/app/Console/Commands/DeployNewProject.php:49)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /mnt/d/laragon/www/servercoc/app/Console/Commands/DeployNewProject.php(49): mkdir()
+#2 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\\Console\\Commands\\DeployNewProject->handle()
+#3 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#5 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#6 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Container/Container.php(653): Illuminate\\Container\\BoundMethod::call()
+#7 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Illuminate\\Container\\Container->call()
+#8 /mnt/d/laragon/www/servercoc/vendor/symfony/console/Command/Command.php(298): Illuminate\\Console\\Command->execute()
+#9 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#10 /mnt/d/laragon/www/servercoc/vendor/symfony/console/Application.php(1015): Illuminate\\Console\\Command->run()
+#11 /mnt/d/laragon/www/servercoc/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#12 /mnt/d/laragon/www/servercoc/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#13 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Console/Application.php(94): Symfony\\Component\\Console\\Application->run()
+#14 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#15 /mnt/d/laragon/www/servercoc/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#16 {main}
+"} 
+[2022-04-10 01:31:48] local.ERROR: Project does not exist. {"exception":"[object] (Exception(code: 1): Project does not exist. at /mnt/d/laragon/www/servercoc/app/Console/Commands/InstallProject.php:45)
+[stacktrace]
+#0 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\\Console\\Commands\\InstallProject->handle()
+#1 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#3 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#4 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Container/Container.php(653): Illuminate\\Container\\BoundMethod::call()
+#5 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Illuminate\\Container\\Container->call()
+#6 /mnt/d/laragon/www/servercoc/vendor/symfony/console/Command/Command.php(298): Illuminate\\Console\\Command->execute()
+#7 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#8 /mnt/d/laragon/www/servercoc/vendor/symfony/console/Application.php(1015): Illuminate\\Console\\Command->run()
+#9 /mnt/d/laragon/www/servercoc/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#10 /mnt/d/laragon/www/servercoc/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#11 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Console/Application.php(94): Symfony\\Component\\Console\\Application->run()
+#12 /mnt/d/laragon/www/servercoc/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#13 /mnt/d/laragon/www/servercoc/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#14 {main}
+"} 
+[2022-04-10 01:33:31] local.INFO: Copy .env file  
+[2022-04-10 01:33:31] local.INFO: Generate key  
+[2022-04-10 01:33:38] local.INFO: Install composer package  
