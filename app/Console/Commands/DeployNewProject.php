@@ -59,7 +59,7 @@ class DeployNewProject extends Command
         
         Log::info("Make www folder: /var/www/$project");
         mkdir("/var/www/$project", 0775, true);
-        shell_exec("chown -R www-data:www-data /var/www/$project");
+        shell_exec("chown -R nginx:nginx /var/www/$project");
         shell_exec("chmod -R 775 /var/www/$project");
         
         Log::info("Setup project $project completed!");

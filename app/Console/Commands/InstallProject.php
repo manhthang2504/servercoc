@@ -47,7 +47,7 @@ class InstallProject extends Command
         } 
         Log::info("Copy .env file");
         shell_exec("cd /var/www/$project");
-        // shell_exec("cp .env.example .env");
+        shell_exec("cp .env.example .env");
 
         Log::info("Generate key for project $project");
         shell_exec("php artisan key:generate");
